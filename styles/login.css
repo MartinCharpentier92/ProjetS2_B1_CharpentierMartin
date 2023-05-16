@@ -1,0 +1,29 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.login-form-element1,
+.login-form-element2,
+.login-form-element3,
+.login-form-element4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.login-form-element4{
+    padding: 20px;
+}
