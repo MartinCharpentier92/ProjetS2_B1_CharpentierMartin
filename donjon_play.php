@@ -31,13 +31,7 @@
     $roomObject = new Room($room);
     $roomObject->makeAction();
 ?>
-<style>
-    body {
-        background-image: url(img/<?php echo $roomObject->picture; ?>);
-        background-size: cover;
-        background-position: center;
-    }
-</style>
+
 <?php require_once('_header.php'); ?>
     <div 
         class="container"
@@ -53,7 +47,10 @@
                 <p><?php echo $roomObject->getDescription(); ?></p>
                 <?php echo $roomObject->getHTML(); ?>
             </div>
+            <img src="img/<?php echo $roomObject->picture; ?>" alt="">
         </div>
+        
     </div>
-    </body>
+    
+    
 </html>

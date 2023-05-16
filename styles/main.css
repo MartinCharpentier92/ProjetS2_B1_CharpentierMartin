@@ -21,11 +21,28 @@ body {
     width: 50%;
 }
 
-.table {
+.table{
     width: 100%;
     margin-top: 20px;
+    border-collapse: collapse;
 }
 
+.table td,
+.table th{
+    border: 2px solid grey;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.td-persos-choice{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+}
+
+.table .btn-red{
+    margin-top: 5px;
+}
 h1 {
     margin: 20px 0;
 }

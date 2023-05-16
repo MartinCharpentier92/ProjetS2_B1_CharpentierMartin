@@ -38,7 +38,7 @@
                 <th>Point de vie</th>
                 <th>Force</th>
                 <th>Dextérité</th>
-                <th>charisme</th>
+                <th>Charisme</th>
                 <th>Intelligence</th>
                 <th>Vitesse</th>
                 <th>Or</th>
@@ -50,7 +50,7 @@
                 <tr>
                     <td><?php echo $perso['id']; ?></td>
                     <td><?php echo $perso['name']; ?></td>
-                    <td><?php echo $perso['xp']; ?></td>
+                    <td><?php echo $perso['xp']; ?></td>    
                     <td><?php echo $perso['pdv']; ?></td>
                     <td><?php echo $perso['for']; ?></td>
                     <td><?php echo $perso['dex']; ?></td>
@@ -58,34 +58,37 @@
                     <td><?php echo $perso['int']; ?></td>
                     <td><?php echo $perso['vit']; ?></td>
                     <td><?php echo $perso['gold']; ?></td>
-                    <td align="right">
-                        <? if ($perso['pdv'] > 0) { ?>
+                    <td>
+                        <div class="td-persos-choice">
+                            <?php if ($perso['pdv'] > 0) { ?>
+                                <a 
+                                    class="btn btn-grey"
+                                    href="persos_choice.php?id=<?php echo $perso['id']; ?>" 
+                                >Choisir</a>
+                            <?php } else{ ?>
+                                <a  
+                                    class="btn btn-green"
+                                    href="persos_respawn.php?id=<?php echo $perso['id']; ?>" 
+                                >Résussité</a>
+                            <?php } ?>
+
                             <a 
                                 class="btn btn-grey"
-                                href="persos_choice.php?id=<?php echo $perso['id']; ?>" 
-                            >Choisir</a>
-                        <?php } else { ?>
+                                href="persos_show.php?id=<?php echo $perso['id']; ?>" 
+                            >Détails</a>
+
                             <a 
-                                class="btn btn-green"
-                                href="persos_respawn.php?id=<?php echo $perso['id']; ?>" 
-                            >Résussité</a>
-                        <?php } ?>
+                                class="btn btn-blue"
+                                href="persos_edit.php?id=<?php echo $perso['id']; ?>" 
+                            >Modifier</a>
 
-                        <a 
-                            class="btn btn-grey"
-                            href="persos_show.php?id=<?php echo $perso['id']; ?>" 
-                        >Détails</a>
-
-                        <a 
-                            class="btn btn-blue"
-                            href="persos_edit.php?id=<?php echo $perso['id']; ?>" 
-                        >Modifier</a>
-
-                        <a 
-                            class="btn btn-red"
-                            href="persos_del.php?id=<?php echo $perso['id']; ?>" 
-                            onClick="return confirm('Etes-vous sûr ?');"
-                        >Supprimer</a>
+                            <a 
+                                class="btn btn-red"
+                                href="persos_del.php?id=<?php echo $perso['id']; ?>" 
+                                onClick="return confirm('Etes-vous sûr ?');"
+                            >Supprimer</a>
+                        </div>
+                        
                     </td>
                 </tr>
             <?php } ?>
