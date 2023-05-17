@@ -40,8 +40,8 @@ body {
     grid-template-columns: 1fr 1fr  ;
 }
 
-.table .btn-red{
-    margin-top: 5px;
+.table .btn{
+    margin: 3px;
 }
 h1 {
     margin: 20px 0;
@@ -62,7 +62,7 @@ h2 {
 }
 
 .btn-grey {
-    background: lightgray;
+    background: grey;
     color: aliceblue;
 }
 
@@ -71,8 +71,8 @@ h2 {
 }
 
 .btn-red {
-    background: lightcoral;
-    color: aliceblue;
+    background: red;
+    color: white;
 }
 
 .btn-red:hover {
@@ -80,8 +80,8 @@ h2 {
 }
 
 .btn-green {
-    background: #91d291;
-    color: lightslategray;
+    background: green;
+    color: white;
 }
 
 .btn-green:hover {
@@ -89,12 +89,13 @@ h2 {
 }
 
 .btn-blue {
-    background: lightblue;
-    color: lightslategray;
+    background: rgb(0, 100, 201);
+    color:white;
 }
 
 .btn-blue:hover {
     background-color: lightskyblue;
+    color: black;
 }
 
 .mt-2 {

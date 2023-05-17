@@ -29,8 +29,9 @@
         <h1>Connexion</h1>
     </div>    
     
-        <?php if (isset($msg)) { echo "<div>" . $msg . "</div>"; } ?>
-
+        <div class="login-form-element-error">
+            <?php if (isset($msg)) { echo "<div>" . $msg . "</div>"; } ?>
+        </div>
             <div class="login-form-element2">
                 <label for="email">Email :</label>
 

@@ -43,11 +43,11 @@
 ?>
 
 <?php require_once('_header.php'); ?>
-<div class="container">
+
+    <form action="" method="post" class="edit-form">
     <h1>Modifier un personnage</h1>
-    <form action="" method="post">
         <div>
-            <label for="name">Nom</label>
+            <label for="name">Nom :</label>
             <input 
                 type="text"
                 id="name"
@@ -64,9 +64,8 @@
                 name="send" 
                 value="Modifier" 
             />
-            <a class="btn btn-grey" href="persos.php">Retour</a>
+        <a class="btn btn-grey" href="persos.php">Retour</a>
         </div>
     </form>
-</div>
 </body>
 </html>

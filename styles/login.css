@@ -27,3 +27,27 @@
 .login-form-element4{
     padding: 20px;
 }
+
+.login-form-element-error{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid grey;
+}
+
+.edit-form h1{
+    display: flex;
+    justify-content: center;
+}

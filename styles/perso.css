@@ -1,0 +1,17 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.perso-details{
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+    padding: 20px;
+}
+
+.perso-details h1{
+    display: flex;
+    justify-content: center;
+}

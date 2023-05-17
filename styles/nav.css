@@ -1,8 +1,11 @@
 #nav {
+    margin: 5px;
     background-color: grey;
     display: flex;
     list-style: none;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 5px;
+    
 }
 
 #nav a {
@@ -11,3 +14,6 @@
     padding: 10px;
     display: inline-block;
 }
+li a:hover{
+    background-color: black;
+}    
