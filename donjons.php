@@ -22,15 +22,30 @@
 ?>
 
 <?php require_once('_header.php'); ?>
-    <div class="container">
-        <?php echo $_SESSION['perso']['name']; ?> (<a href="persos.php">Changer</a>)
+    <!--<div class="container">
+        <//?php echo $_SESSION['perso']['name']; ?> (<a href="persos.php">Changer</a>)
         <ul>
-            <?php foreach($donjons as $donjon) { ?>
-                <li><a href="donjon_play.php?id=<?php echo $donjon['id']; ?>">
-                    <?php echo $donjon['name']; ?>
-                </a></li>
-            <?php } ?>
-        </ul>
+            <//?php foreach($donjons as $donjon) { ?>
+                <li>
+                    <a href="donjon_play.php?id=<//?php echo $donjon['id']; ?>">
+                    <//?php echo $donjon['name']; ?>
+                    </a>
+                </li>
+            <//?php } ?>
+        </ul> 
+    </div>-->
+
+    <div class="donjon-choice">
+        
+        <div class="donjon-choice-element1">
+            <?php echo $_SESSION['perso']['name']; ?>
+            
+            <a class="btn btn-grey" href="persos.php">Changer</a>
+        </div> 
+        
+
+
+
     </div>
 </body>
 </html>

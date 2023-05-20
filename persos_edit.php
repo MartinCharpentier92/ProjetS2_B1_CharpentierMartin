@@ -46,9 +46,10 @@
 
     <form action="" method="post" class="edit-form">
     <h1>Modifier un personnage</h1>
-        <div>
+        <div class="edit-form-element1">
             <label for="name">Nom :</label>
             <input 
+                class="name-change"
                 type="text"
                 id="name"
                 name="name"
@@ -57,14 +58,16 @@
                 required
             />
         </div>
-        <div class="mt-4">
-            <input 
-                type="submit" 
-                class="btn btn-green" 
-                name="send" 
-                value="Modifier" 
-            />
-        <a class="btn btn-grey" href="persos.php">Retour</a>
+        <div class="edit-form-element2">
+            <div class="mt-4">
+                <input 
+                    type="submit" 
+                    class="btn btn-green" 
+                    name="send" 
+                    value="Modifier" 
+                />
+                <a class="btn btn-grey" href="persos.php">Retour</a>
+            </div>
         </div>
     </form>
 </body>

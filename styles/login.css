@@ -1,6 +1,39 @@
-*{
-    font-family: 'Poppins', sans-serif;
+/*
+    Style sheet for login.php  
+                    register.php
+
+*/
+
+/* register.php*/
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
 }
+
+.register-form-element1,
+.register-form-element2,
+.register-form-element3,
+.register-form-element4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.register-form-element4{
+    padding: 20px;
+}
+
+
+/* login.php */
 
 .login-form{
     display: flex;
@@ -35,19 +68,4 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.2em;
-}
-
-
-.edit-form{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    margin: auto;
-    justify-content: center;
-    border: 2px solid grey;
-}
-
-.edit-form h1{
-    display: flex;
-    justify-content: center;
 }

@@ -24,10 +24,11 @@
     }
 ?>
 <?php require_once('_header.php'); ?>
+
     <form class="login-form" action="" method="post">
-    <div class="login-form-element1">
-        <h1>Connexion</h1>
-    </div>    
+        <div class="login-form-element1">
+            <h1>Connexion</h1>
+        </div>    
     
         <div class="login-form-element-error">
             <?php if (isset($msg)) { echo "<div>" . $msg . "</div>"; } ?>

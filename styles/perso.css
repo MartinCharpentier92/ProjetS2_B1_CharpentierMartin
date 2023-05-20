@@ -1,6 +1,9 @@
-*{
-    font-family: 'Poppins', sans-serif;
-}
+/* Style sheet for persos_show.php
+                    persos_edit.php
+
+*/
+/* persos_show.php */
+
 
 .perso-details{
     border: 2px solid grey;
@@ -14,4 +17,43 @@
 .perso-details h1{
     display: flex;
     justify-content: center;
+}
+
+
+/* persos_edit.php*/
+
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid grey;
+}
+
+.edit-form h1{
+    display: flex;
+    justify-content: center;
+}
+
+.edit-form-element1{
+    display: flex;
+    justify-content: center;
+}
+
+.edit-form-element2{
+    display: flex;
+    justify-content: center;
+}
+
+.name-change{
+    width: 50%;
+    margin-left: 4px;
+}
+
+.mt-4 .btn-green{
+    width:71.92px;
+    height: 45px;
+    margin-bottom: 7px;
+    margin-top: -2px;
 }

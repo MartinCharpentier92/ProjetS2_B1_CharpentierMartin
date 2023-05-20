@@ -16,10 +16,15 @@
     }
 ?>
 <?php require_once('_header.php'); ?>
-    <form action="" method="post">
-        <h1>Création de votre compte</h1>
-        <div>
-            <label for="email">Email</label>
+
+    <form class="register-form" action="" method="post" >
+        <div class="register-form-element1">
+            <h1>Création de votre compte</h1>   
+        </div>
+        
+        <div class="register-form-element2">
+            <label for="email">Email :</label>
+
             <input 
                 type="email" 
                 placeholder="Entrez votre email" 
@@ -27,8 +32,10 @@
                 id="email" 
             />
         </div>
-        <div>
-            <label for="password">Mot de passe</label>
+
+        <div class="register-form-element3">
+            <label for="password">Mot de passe :</label>
+
             <input 
                 type="password" 
                 placeholder="Entrez votre mot de passe" 
@@ -36,7 +43,7 @@
                 id="password" 
             />
         </div>
-        <div>
+        <div class="register-form-element4">
             <input type="submit" name="send" value="Créer" />
         </div>
     </form>
