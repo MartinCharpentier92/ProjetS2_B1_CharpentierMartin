@@ -20,4 +20,4 @@
         'user_id'     => $_SESSION['user']['id']
     ]);
 
-    header('Location: persos.php?msg=perso bien supprimé !');
+    header('Location: persos.php?msg=Personnage bien supprimé !');

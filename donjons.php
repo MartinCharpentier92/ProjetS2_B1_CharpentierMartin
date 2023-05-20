@@ -35,17 +35,31 @@
         </ul> 
     </div>-->
 
-    <div class="donjon-choice">
-        
-        <div class="donjon-choice-element1">
-            <?php echo $_SESSION['perso']['name']; ?>
-            
-            <a class="btn btn-grey" href="persos.php">Changer</a>
-        </div> 
-        
 
+      
+    <div class="donjon-choice-element1">
+        <?php echo $_SESSION['perso']['name']; ?>    
+        <a class="btn btn-grey" href="persos.php">Changer</a>
+    </div>    
 
-
+    <div class="donjon-choice-title">
+        <h1>Choisissez un donjon !</h1>
     </div>
+
+    <div class="donjon-choice-element2">
+        <?php foreach($donjons as $donjon){ ?>
+            <a href="donjon_play.php?id=<//?php echo $donjon['id']; ?>">
+            <?php echo $donjon['name']; ?>
+            <img src="" alt="">
+            </a>
+        <?php } ?>
+    </div>
+
+
+        
+
+
+
+    
 </body>
 </html>

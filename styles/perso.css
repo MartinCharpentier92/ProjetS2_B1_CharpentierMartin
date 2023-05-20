@@ -20,15 +20,17 @@
 }
 
 
-/* persos_edit.php*/
+/* persos_edit.php */
 
 .edit-form{
+    border: 2px solid grey;
     display: flex;
     flex-direction: column;
     width: 35%;
     margin: auto;
     justify-content: center;
-    border: 2px solid grey;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 .edit-form h1{
