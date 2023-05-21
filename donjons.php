@@ -49,8 +49,17 @@
     <div class="donjon-choice-element2">
         <?php foreach($donjons as $donjon){ ?>
             <a href="donjon_play.php?id=<//?php echo $donjon['id']; ?>">
-            <?php echo $donjon['name']; ?>
-            <img src="" alt="">
+            
+            <article>
+                <?php echo $donjon['name']; ?>
+                <figure>
+                    <img src="img/<?php echo $donjon['picture'] ? $donjon['picture'] :""?>" alt="">
+                </figure>
+
+            </article>
+            
+            
+            
             </a>
         <?php } ?>
     </div>
