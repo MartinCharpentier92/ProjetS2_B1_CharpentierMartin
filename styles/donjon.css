@@ -1,13 +1,18 @@
 /*
 Style sheet for donjons.php
 */
-
-
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+    width: 50%;
+}
 
 .donjon-choice-title{
     display: flex;
     justify-content: center;
-   
+
 }
 
 .donjon-choice-element1{
@@ -18,7 +23,7 @@ Style sheet for donjons.php
     width: 10%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
 }
 
 .donjon-choice-title{
@@ -26,18 +31,51 @@ Style sheet for donjons.php
 }
 
 .donjon-choice-element2{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .donjon-choice-element2 a{
-    text-decoration: none;
-    color: black;
-    transition: all .4s ease-in-out;
+    display: flex;
+    justify-content: space-around;
 }
 
-.donjon-choice-element2 a:hover{
-    transform: scale(1.1);
+.dj-choice-article{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .4s ease-in-out;
+    padding: 0px 100px 0px 100px;
+    /* margin: auto; */
+} 
+
+.dj-choice-article:hover{
+    transform: scale(1.1); 
+}
+
+.dj-choice-article-name{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.dj-choice-article figure{
+    display: flex;
+    justify-content: center;
+}
+
+.dj-choice-article p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    color: black;
+}
+
+
+.dj-choice-img{
+    width: 350px;
 }

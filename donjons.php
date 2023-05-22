@@ -50,11 +50,17 @@
         <?php foreach($donjons as $donjon){ ?>
             <a href="donjon_play.php?id=<//?php echo $donjon['id']; ?>">
             
-            <article>
-                <?php echo $donjon['name']; ?>
-                <figure>
-                    <img src="img/<?php echo $donjon['picture'] ? $donjon['picture'] :""?>" alt="">
+            <article class="dj-choice-article"> 
+                <div class="dj-choice-article-name">
+                    <?php echo $donjon['name']; ?>
+                </div>
+                <figure >
+                    <img class="dj-choice-img" src="img/<?php echo $donjon['picture'] ? $donjon['picture'] :""?>" alt="">
                 </figure>
+                
+                <p class="dj-choice-article-desc">
+                    <?php echo $donjon['description']? $donjon['description'] : "" ?>
+                </p>
 
             </article>
             
